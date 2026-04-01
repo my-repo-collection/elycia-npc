@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Elysia - Adorable Vampire Skin NPC from the Gothic Castle Decoration Bot Collection. Young Girl base character. Only 25 Rays.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.imgur.com/favicon-elysia.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/favicon-elysia.png">
+
+    <title>ELYSIA • Gothic Castle NPC</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --gothic: 'Cinzel Decorative', cursive;
+            --elegant: 'Playfair Display', serif;
+            --cute: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a0a, #1a0f1f, #0a0a0a);
+            color: #f0d4e8;
+            font-family: var(--cute);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.75)),
+                url('https://i.imgur.com/your-dark-castle-bg.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4.5rem;
+            width: 100%;
+        }
+
+        .title {
+            font-family: var(--gothic);
+            font-size: clamp(3.5rem, 8vw, 6rem);
+            color: #ffccdd;
+            text-shadow: 0 0 30px #9f4a8c, 0 0 60px #4a1a3d;
+            letter-spacing: 6px;
+            margin-bottom: 0.3rem;
+        }
+
+        .subtitle {
+            font-family: var(--elegant);
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            color: #e8b8d0;
+            margin-bottom: 0.8rem;
+        }
+
+        .collection-tag {
+            display: inline-block;
+            background: rgba(159, 74, 140, 0.85);
+            color: #ffddcc;
+            font-family: var(--cute);
+            font-size: 1.1rem;
+            padding: 8px 24px;
+            border-radius: 30px;
+            border: 2px solid #d89ac4;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            box-shadow: 0 0 20px rgba(255, 136, 187, 0.4);
+        }
+
+        .main-image {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 20px;
+            box-shadow: 0 0 80px rgba(180, 80, 140, 0.7);
+            border: 4px solid #d89ac4;
+            flex-shrink: 0;
+        }
+
+        /* Main CTA */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff3399, #ff77cc);
+            color: white;
+            font-family: var(--cute);
+            font-size: clamp(1.25rem, 3vw, 1.45rem);
+            font-weight: 600;
+            padding: 18px 52px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 2rem;
+            box-shadow: 0 0 40px rgba(255, 51, 153, 0.6);
+            transition: all 0.3s ease;
+            border: 3px solid #ffe6f0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.08) translateY(-4px);
+            box-shadow: 0 0 65px rgba(255, 51, 153, 0.85);
+            background: linear-gradient(45deg, #ff77cc, #ff3399);
+        }
+
+        .cta-button .small-text {
+            font-size: 0.96rem;
+            font-weight: 400;
+            display: block;
+            margin-top: 6px;
+            letter-spacing: normal;
+            opacity: 0.95;
+        }
+
+        .features {
+            padding: 110px 5%;
+            background: rgba(20, 10, 25, 0.97);
+        }
+
+        .section-title {
+            font-family: var(--gothic);
+            font-size: clamp(2.8rem, 6vw, 3.8rem);
+            color: #ffccdd;
+            text-align: center;
+            margin-bottom: 4rem;
+            text-shadow: 0 0 20px #9f4a8c;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .bullet-list {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .bullet {
+            background: rgba(60, 20, 50, 0.7);
+            padding: 24px 28px;
+            border-radius: 16px;
+            margin-bottom: 1.3rem;
+            border-left: 7px solid #d89ac4;
+            font-size: 1.32rem;
+            line-height: 1.55;
+        }
+
+        .price {
+            background: linear-gradient(45deg, #2a0f22, #4a1a3d);
+            padding: 110px 20px;
+            text-align: center;
+        }
+
+        .price-tag {
+            font-family: var(--gothic);
+            font-size: clamp(3.5rem, 8vw, 5.5rem);
+            color: #ffccdd;
+            text-shadow: 0 0 40px #ff88bb;
+            margin: 1.2rem 0;
+        }
+
+        .cta-button-secondary {
+            background: linear-gradient(45deg, #ff3399, #ff77cc);
+            color: white;
+            font-size: 1.35rem;
+            padding: 18px 52px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 32px;
+            box-shadow: 0 0 35px rgba(255, 51, 153, 0.6);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .cta-button-secondary:hover {
+            transform: scale(1.07);
+            box-shadow: 0 0 60px rgba(255, 51, 153, 0.85);
+        }
+
+        footer {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: #0a0a0a;
+            font-size: 1.1rem;
+        }
+
+        .glow {
+            animation: glow 4s infinite alternate ease-in-out;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 25px #ff88bb;
+            }
+
+            to {
+                text-shadow: 0 0 50px #ff88bb, 0 0 80px #9f4a8c;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 2.8rem;
+            }
+
+            .bullet-list {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero-content">
+            <div>
+                <h1 class="title glow">ELYSIA</h1>
+                <p class="subtitle">NPC Base Character</p>
+
+                <!-- Nueva etiqueta de colección -->
+                <div class="collection-tag">
+                    GOTHIC CASTLE COLLECTION - DECORATION BOT
+                </div>
+
+                <img src="/img/elysia.png" alt="Elysia - Cute blonde vampire girl NPC from Gothic Castle collection"
+                    class="main-image">
+
+                <a href="https://tu-tienda.com/elysia" class="cta-button" aria-label="Buy Elysia NPC for 25 Rays">
+                    GET ELYSIA NOW
+                    <span class="small-text">Only 25 Rays • Limited Edition</span>
+                </a>
+            </div>
+
+            <div class="bullet-list">
+                <ul style="list-style: none; font-size: 1.32rem; line-height: 2.1;">
+                    <li><strong>•</strong> Ready-to-use NPC for decorations &amp; ambient scenes</li>
+                    <li><strong>•</strong> Clothing included in skin layer — easily layer additional outfits</li>
+                    <li><strong>•</strong> Includes detailed eyes + freckles</li>
+                    <li><strong>•</strong> No makeup or hair included (perfect for full customization)</li>
+                    <li><strong>•</strong> Premium quality 1024×1024 textures — optimized and compressed with TinyPNG to
+                        minimize weight and prevent lag in your scenes</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="features" aria-labelledby="about-title">
+        <h2 id="about-title" class="section-title">Who is Elysia?</h2>
+        <div class="content-wrapper">
+            <div class="bullet-list">
+                <div class="bullet"><strong>•</strong> A sweet and innocent vampire who never lost her playful, childish
+                    side.</div>
+                <div class="bullet"><strong>•</strong> Always playing with her colorful rainbow hula hoop around the
+                    Academy.</div>
+                <div class="bullet"><strong>•</strong> Her loyal companion is an adorable vampire puppy that follows her
+                    everywhere.</div>
+            </div>
+            <div class="bullet-list">
+                <div class="bullet"><strong>•</strong> Ready-to-use Vampire Skin NPC – Young Girl base.</div>
+                <div class="bullet"><strong>•</strong> Ultra-detailed eyes + freckles. No makeup or hair (ideal for full
+                    customization).</div>
+                <div class="bullet"><strong>•</strong> Premium quality 1024×1024 textures — optimized and compressed
+                    with TinyPNG to minimize weight and prevent lag in your scenes.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price" aria-labelledby="price-title">
+        <h2 id="price-title" class="section-title" style="color:#ffddaa;">Limited Time Offer</h2>
+        <div class="price-tag">ONLY 25 RAYS</div>
+        <p style="font-size:1.45rem; max-width:720px; margin:30px auto; padding:0 15px;">
+            Don't miss out on this adorable vampire girl from the Gothic Castle collection!
+        </p>
+
+        <a href="https://tu-tienda.com/elysia" class="cta-button-secondary" aria-label="Buy Elysia for 25 Rays">
+            GET ELYSIA FOR 25 RAYS →
+        </a>
+    </section>
+
+    <footer>
+        <p><strong>Elysia</strong> © 2026 • Bot Collection</p>
+        <p style="margin-top: 12px; opacity: 0.75;">
+            Perfect for Gothic Castle decorations, ambient scenes, and dark fantasy worlds with a cute touch.
+        </p>
+    </footer>
+
+</body>
+
+</html>
